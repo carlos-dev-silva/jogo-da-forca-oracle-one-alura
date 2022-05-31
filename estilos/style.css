@@ -1,0 +1,209 @@
+
+
+body{
+    background-color: #d8dfe8;
+    height: 80vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logoalura{   
+    position: absolute;
+    padding: 25px;
+    width: 45px;
+    height: 45px;
+}
+
+/*********
+area do jogo*/
+.area-jogo{
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/******
+forca*/
+.area-img{
+    background-image: url(../imagens/forca1.png);
+    width: 244px;
+    height: 282px;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 350px;
+    bottom: 55px;
+}
+/****************
+palavra secreta*/
+.segredo{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 280px;
+    right: auto;
+    font-size: 38px;
+
+    
+}
+.letras{
+    text-transform: uppercase;
+    color: #0A3871;
+    width: 50px;
+    text-align: center;
+    border-bottom: 2px solid #0A3871;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-transform: uppercase;
+
+}
+/*******
+botoes*/
+.btn{
+    border: none;
+    width: 135%;
+    height: 6vh;
+    border-radius: 5px;
+    margin: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 30px;
+    transition: 0.5s;
+    color: black;
+    border: 1px solid #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn:disabled{
+    cursor: not-allowed;
+}
+
+.btn-reload{
+    border: none;
+    width: 135%;
+    height: 6vh;
+    border-radius: 5px;
+    margin: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 24px;
+    transition: 0.5s;
+    color: #0A3871;
+    border: 1px solid #000;
+    text-align: center;
+    
+}
+
+.btn:hover{
+    background: #0A3871;
+    color: #000;
+    transform: scale(1.2);
+    box-shadow: 0px 5px 50px #fff;
+}
+
+.btn-reload:hover{
+    background: #0A3871;
+    color: #000;
+    transform: scale(1.2);
+    box-shadow: 0px 5px 50px #fff;
+}
+
+@media(max-width: 550px){
+    .btn{
+        border: none;
+        width: 85%;
+        height: 4vh;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 10px;
+        transition: 0.5s;
+        color: black;
+        border: 1px solid #000;
+        text-align: center;
+    }
+    
+    .btn-reload{
+        border: none;
+        width: 85%;
+        height: 4vh;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 19px;
+        transition: 0.5s;
+        color: #0A3871;
+        border: 1px solid #000;
+        text-align: center;
+    }
+    
+    .btn:hover{
+        background: skyblue;
+        color: #000;
+        transform: scale(1.2);
+        box-shadow: 0px 5px 50px #fff;
+    }
+    
+    .btn-reload:hover{
+        background: #0A3871;
+        color: #000;
+        transform: scale(1.2);
+        box-shadow: 0px 5px 50px #fff;
+    }
+    
+}
+/**********
+categoria*/
+
+.categoria{
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.dica, #dica{
+    position: absolute;
+    text-transform: uppercase;
+    color: #0A3871;
+    font-size: 20px;
+    left: 580px;
+    font-weight: bold;
+    bottom: 75px;
+    text-align: center;
+    
+}
+footer .rodape {
+    position: fixed;
+    width: 1200px;
+    height: 50px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+    top: 600px;
+    font-family: Helvetica;
+    color: rgb(51, 50, 50);
+    font-size: 15px;
+    margin-top: 5px; 
+    color: #0A3871;   
+}
+
+
+@media(max-width: 550px){
+    .categoria{
+        color: white;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    
+    .dica{
+        text-transform: uppercase;
+        color: #0A3871;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+}
